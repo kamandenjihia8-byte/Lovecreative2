@@ -1,0 +1,59 @@
+# LOVE Creative Café — Website
+
+Statische Website (HTML/CSS/JS, kein Build-Schritt nötig). Bereit für das Deployment auf **Vercel**.
+
+## Projektstruktur
+
+```
+.
+├── index.html        → die Seite
+├── styles.css        → alle Styles
+├── script.js         → Navigation, FAQ, Reveal-Animationen, Cookie-Banner
+├── favicon.svg       → Favicon (LO/VE)
+├── images/           → alle Fotos (aus dem Branding zugeschnitten)
+├── vercel.json       → Caching- & Security-Header, saubere URLs
+├── robots.txt        → für Suchmaschinen
+└── sitemap.xml       → für Suchmaschinen
+```
+
+## Deployment auf Vercel — 3 Wege
+
+### 1) Per Drag & Drop (am einfachsten, kein Konto-Setup)
+1. Auf https://vercel.com/new gehen (kostenloses Konto genügt).
+2. Diesen Ordner (entpackt) ins Browserfenster ziehen.
+3. **Framework Preset:** „Other". **Build Command:** leer lassen. **Output Directory:** leer lassen (Root).
+4. Auf **Deploy** klicken — fertig.
+
+### 2) Per Vercel CLI
+```bash
+npm i -g vercel
+cd love-creative-cafe   # in diesen Ordner wechseln
+vercel                  # Vorschau-Deployment
+vercel --prod           # Produktion
+```
+
+### 3) Per Git (für laufende Updates empfohlen)
+1. Ordner als Git-Repository auf GitHub/GitLab pushen.
+2. Auf Vercel „Import Project" → Repository auswählen.
+3. Einstellungen wie oben (Framework „Other", kein Build). Deploy.
+4. Jeder Push deployt künftig automatisch.
+
+## Eigene Domain (lovecreative.ch)
+Im Vercel-Dashboard unter **Settings → Domains** `lovecreative.ch` und `www.lovecreative.ch`
+hinzufügen und die angezeigten DNS-Einträge bei eurem Domain-Anbieter setzen.
+
+## Vor dem Live-Gang anpassen
+- **WhatsApp-Nummer:** in `index.html` überall `41XXXXXXXXX` durch die echte Nummer ersetzen
+  (Format ohne „+" und ohne Leerzeichen, z. B. `41791234567`).
+- **Telefonnummer:** `+41 XX XXX XX XX` im Kontaktbereich ersetzen.
+- **Hinweis-Balken:** Sobald die Filiale geöffnet ist, den `<div class="alertbar">…</div>`
+  ganz oben in `index.html` entfernen und in der grünen Leiste `.topbar` ggf. wieder
+  „Di–So geöffnet" eintragen.
+
+## Inhalte bearbeiten
+- **Texte & Preise:** direkt in `index.html`.
+- **Design/Farben:** in `styles.css` (Farbvariablen ganz oben unter `:root`).
+- **Fotos:** Dateien in `images/` durch eigene ersetzen (gleiche Dateinamen beibehalten,
+  oder die `src`-Pfade in `index.html` anpassen). Empfohlene Formate: JPG/WebP, Breite 800–1200 px.
+
+© 2026 LOVE Creative GmbH

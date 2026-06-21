@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 720" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="480" height="720" fill="#10100F"/>
+  <rect x="20" y="20" width="440" height="680" fill="none" stroke="#E7DFce" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="240" y="92" text-anchor="middle" fill="#E7DFce" font-family="Arial, sans-serif" font-size="15" letter-spacing="6" font-weight="700">SCHATTENMUSTER</text>
+  <line x1="160" y1="110" x2="320" y2="110" stroke="#E7DFce" stroke-opacity="0.4" stroke-width="1"/>
+  <g fill="none" stroke="#E7DFce" stroke-width="2" opacity="0.75">
+    <path d="M150 230 h180 v40 h-140 v40 h140 v40 h-140 v40 h180" />
+    <path d="M150 230 v160" opacity="0.5"/>
+  </g>
+  <text x="240" y="500" text-anchor="middle" fill="#F6F1E7" font-size="78" font-weight="700" letter-spacing="6">MUSTER</text>
+  <text x="240" y="556" text-anchor="middle" fill="#BDB7A8" font-family="Arial, sans-serif" font-size="17" font-style="italic">Warum wir immer wieder dasselbe tun</text>
+  <text x="240" y="650" text-anchor="middle" fill="#E7DFce" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">L. R. VANTERA</text>
+</svg>

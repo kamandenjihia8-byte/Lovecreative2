@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 720" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="480" height="720" fill="#16161E"/>
+  <rect x="20" y="20" width="440" height="680" fill="none" stroke="#C8A24B" stroke-opacity="0.55" stroke-width="1.5"/>
+  <text x="240" y="92" text-anchor="middle" fill="#C8A24B" font-family="Arial, sans-serif" font-size="15" letter-spacing="6" font-weight="700">SCHATTENMUSTER</text>
+  <line x1="160" y1="110" x2="320" y2="110" stroke="#C8A24B" stroke-opacity="0.5" stroke-width="1"/>
+  <g fill="none" stroke="#C8A24B" stroke-width="2" opacity="0.9">
+    <path d="M240 300 m-110 0 a110 80 0 0 1 220 0" opacity="0.25"/>
+    <path d="M240 300 m-88 0 a88 64 0 0 1 176 0" opacity="0.4"/>
+    <path d="M240 300 m-66 0 a66 48 0 0 1 132 0" opacity="0.55"/>
+    <path d="M240 300 m-44 0 a44 32 0 0 1 88 0" opacity="0.7"/>
+    <path d="M240 300 m-22 0 a22 16 0 0 1 44 0" opacity="0.9"/>
+    <circle cx="240" cy="300" r="4" fill="#C8A24B" stroke="none"/>
+  </g>
+  <text x="240" y="470" text-anchor="middle" fill="#F4EFE6" font-size="46" font-weight="700">Die Sprache</text>
+  <text x="240" y="520" text-anchor="middle" fill="#F4EFE6" font-size="46" font-weight="700">der Manipulation</text>
+  <text x="240" y="572" text-anchor="middle" fill="#C9C3B6" font-family="Arial, sans-serif" font-size="17" font-style="italic">Wie Worte unbemerkt Macht ausüben</text>
+  <text x="240" y="650" text-anchor="middle" fill="#C8A24B" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">L. R. VANTERA</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 720" font-family="Georgia, 'Times New Roman', serif">
+  <rect width="480" height="720" fill="#1A1110"/>
+  <rect x="20" y="20" width="440" height="680" fill="none" stroke="#C76B4E" stroke-opacity="0.55" stroke-width="1.5"/>
+  <text x="240" y="92" text-anchor="middle" fill="#D17B5E" font-family="Arial, sans-serif" font-size="15" letter-spacing="6" font-weight="700">SCHATTENMUSTER</text>
+  <line x1="160" y1="110" x2="320" y2="110" stroke="#C76B4E" stroke-opacity="0.5" stroke-width="1"/>
+  <g stroke="#D17B5E" stroke-width="2" stroke-linecap="round">
+    <line x1="240" y1="300" x2="240" y2="200"/>
+    <line x1="240" y1="300" x2="310" y2="230" opacity="0.85"/>
+    <line x1="240" y1="300" x2="340" y2="300" opacity="0.7"/>
+    <line x1="240" y1="300" x2="310" y2="370" opacity="0.85"/>
+    <line x1="240" y1="300" x2="240" y2="400"/>
+    <line x1="240" y1="300" x2="170" y2="370" opacity="0.85"/>
+    <line x1="240" y1="300" x2="140" y2="300" opacity="0.7"/>
+    <line x1="240" y1="300" x2="170" y2="230" opacity="0.85"/>
+    <circle cx="240" cy="300" r="7" fill="#D17B5E" stroke="none"/>
+  </g>
+  <text x="240" y="500" text-anchor="middle" fill="#F6ECE6" font-size="74" font-weight="700" letter-spacing="4">TRIGGER</text>
+  <text x="240" y="556" text-anchor="middle" fill="#D8B7A8" font-family="Arial, sans-serif" font-size="16" font-style="italic">Die unsichtbaren Auslöser deines Verhaltens</text>
+  <text x="240" y="650" text-anchor="middle" fill="#D17B5E" font-family="Arial, sans-serif" font-size="16" letter-spacing="3">M. KAINE</text>
+</svg>

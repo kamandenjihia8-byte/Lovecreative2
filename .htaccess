@@ -1,0 +1,52 @@
+# ============================================================
+# SCHATTENMUSTER — Apache config (Infomaniak Webhosting)
+# Ersetzt die Funktion von vercel.json auf Apache-Servern.
+# ============================================================
+
+# ---------- Zeichensatz ----------
+AddDefaultCharset UTF-8
+AddType image/svg+xml .svg
+
+# ---------- Standard-Startseite ----------
+DirectoryIndex index.html
+
+# ---------- Security-Header ----------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Statische Assets lange cachen
+    <FilesMatch "\.(svg|ico|woff2?|ttf|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # CSS/JS moderat cachen
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+
+    # HTML nicht dauerhaft cachen, damit Updates sofort sichtbar sind
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ---------- Kompression ----------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE image/svg+xml application/xml
+</IfModule>
+
+# ---------- HTTPS erzwingen ----------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ---------- Verzeichnis-Listing verbieten ----------
+Options -Indexes
